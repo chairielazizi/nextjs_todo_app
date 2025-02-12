@@ -39,7 +39,7 @@ async function TopicList() {
           </div>
 
           <div className="flex gap-3">
-            <RemoveButton />
+            <RemoveButton id={todo._id} />
             <Link href={`/editTodo/${todo._id}`} className="text-blue-600">
               <HiPencil size={24} />
             </Link>
