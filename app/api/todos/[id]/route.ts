@@ -33,10 +33,10 @@ export async function GET(
   try {
     const { id } = params;
     const todo = await Todo.findById(id);
-    // const todo = await Todo.find({_id: id}); // another way to get by id
+    // const todo = await Todo.find({ _id: id }); // another way to get by id
 
     if (todo) {
-      return NextResponse.json(todo, { status: 200 });
+      return NextResponse.json({ todo }, { status: 200 });
     } else {
       return NextResponse.json({ message: "Todo not found" }, { status: 404 });
     }
