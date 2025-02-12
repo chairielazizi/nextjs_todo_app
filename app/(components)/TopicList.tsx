@@ -13,7 +13,7 @@ function TopicList() {
 
         <div className="flex gap-3">
           <RemoveButton />
-          <Link href="/editTopic" className="text-blue-600">
+          <Link href="/editTodo" className="text-blue-600">
             <HiPencil size={24} />
           </Link>
         </div>

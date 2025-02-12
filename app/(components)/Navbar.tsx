@@ -7,10 +7,10 @@ function Navbar() {
         ToDo App
       </Link>
       <Link
-        href={"/addTopic"}
+        href={"/addTodo"}
         className="text-black font-bold rounded-lg bg-white px-4 py-2"
       >
-        Add Topic
+        Add ToDo
       </Link>
     </nav>
   );
