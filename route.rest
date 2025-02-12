@@ -11,4 +11,25 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+    "title": "Gardening",
+    "description": "Siram pokok bunga"
+}
+
+###
 DELETE http://localhost:3000/api/todos?id=67ac9679f7cbdcb52382e0d3
+
+###
+PUT http://localhost:3000/api/todos/67aca1e2f7cbdcb52382e0d8
+Content-Type: application/json
+
+{
+    "title": "baru punya todo",
+    "description": "baru punyaa lagi todo"
+}
+
+###
+GET http://localhost:3000/api/todos/67aca3cbf7cbdcb52382e0de
