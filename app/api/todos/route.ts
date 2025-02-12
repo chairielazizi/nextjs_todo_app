@@ -19,7 +19,10 @@ export async function GET() {
     if (todos) {
       return NextResponse.json(todos, { status: 200 });
     } else {
-      return NextResponse.json({ message: "No ToDos found" }, { status: 404 });
+      return NextResponse.json(
+        { message: "No ToDos found from backend" },
+        { status: 404 }
+      );
     }
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
