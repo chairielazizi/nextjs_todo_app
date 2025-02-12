@@ -1,0 +1,14 @@
+###
+GET http://localhost:3000/api/todos
+
+###
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+    "title": "New Todo",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+}
+
+###
+DELETE http://localhost:3000/api/todos?id=67ac9679f7cbdcb52382e0d3
