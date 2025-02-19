@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./(components)/Navbar";
 import { Kanit } from "next/font/google";
 
-export const kanit = Kanit({
+const kanit = Kanit({
   subsets: ["latin"],
   weight: "400",
   style: "normal",
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kanit.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="max-w-3xl mx-auto p-4">
           <Navbar />
